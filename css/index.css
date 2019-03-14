@@ -206,34 +206,35 @@ display: flex;
     width: 500px;
     margin: 0 auto;
   }
-  .box {
+  /* .box div  {
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+  } */
+  .inside-box {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .inside-box div{
     display: flex;
     
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    
   }
-  .nav-a {
-    width: 0%;
+  .inside-box div a {
+    width: 500px;
+    height: 40px;
+    justify-content: center;
   }
-  .box div {
-    justify-content: space-between;
-    flex-direction: column;
 
+  a {
+    border: 1px solid grey;
   }
-  .nav-bar {
-   width: 100%;
-  } 
- .img-bar {
-  margin-left: 0%;
-  order: -1;
-  flex: 1 0 100%;
-  margin-left: 79%;
-  margin-bottom: 30px;
-  
-}
-.circle-image {
-  visibility: hidden;
-}
+  .top-content {
+   flex-direction: column;
+  }
+  .bottom-content {
+    flex-direction: column;
+  }
 
 }
 
